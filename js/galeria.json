@@ -1,0 +1,22 @@
+{
+  "rzym": [
+    "./img/carousel-img/rzym1.avif",
+    "./img/carousel-img/rzym2.avif",
+    "./img/carousel-img/rzym3.avif"
+  ],
+  "barcelona": [
+    "./img/carousel-img/barcelona1.jpg",
+    "./img/carousel-img/barcelona2.avif",
+    "./img/carousel-img/barcelona3.jpg"
+  ],
+  "ateny": [
+    "./img/carousel-img/ateny1.avif",
+    "./img/carousel-img/ateny2.avif",
+    "./img/carousel-img/ateny3.avif"
+  ],
+  "lazurowe-wybrzeze": [
+    "./img/carousel-img/lazurowe-wybrzeze1.avif",
+    "./img/carousel-img/lazurowe-wybrzeze2.avif",
+    "./img/carousel-img/lazurowe-wybrzeze3.avif"
+  ]
+}

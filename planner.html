@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tanie Wakacje</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/planner.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#masthead">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#wyszukiwarka">Wyszukiwarka</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#wybrane-miejsca">Wybrane miejsca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formularz-sekcja">Formularz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Div na formularz -->
+    <section class="page-section" id="formularz-sekcja">
+        <div class="container">
+            <div class="text-center pt-5">
+                <h2 class="section-heading text-uppercase">Znajdź swoje wakacje</h2>
+                <h3 class="section-subheading text-muted">Wypełnij poniższe pola, aby zapisać miejsce wyprawy</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <!-- FORMULARZ -->
+                    <form action="" method="POST" id="formularz-wyprawy" class="p-5 border rounded bg-light shadow-sm">
+
+                        <!-- NAZWA WYPRAWY -->
+                        <div class="mb-4">
+                            <label for="nazwa-wyprawy" class="form-label fw-bold text-muted">Nazwa wyprawy:</label>
+                            <input type="text" id="nazwa-wyprawy" name="nazwa-wyprawy" class="form-control"
+                                placeholder="np. Piękny Rzym">
+                        </div>
+
+                        <!-- MIEJSCE -->
+                        <div class="mb-4">
+                            <label for="miejsce" class="form-label fw-bold text-muted">Miejsce:</label>
+                            <input type="text" id="miejsce" name="miejsce" class="form-control"
+                                placeholder="Wpisz np. Włochy, Paryż">
+                        </div>
+
+                        <!-- DATA ROZPOCZĘCIA -->
+                        <div class="mb-4">
+                            <label for="data-rozpoczecia" class="form-label fw-bold text-muted">Data
+                                rozpoczęcia:</label>
+                            <input type="date" id="data-rozpoczecia" name="data-rozpoczecia" class="form-control">
+                        </div>
+
+                        <!-- DATA ZAKOŃCZENIA -->
+                        <div class="mb-4">
+                            <label for="data-zakonczenia" class="form-label fw-bold text-muted">Data
+                                zakończenia:</label>
+                            <input type="date" id="data-zakonczenia" name="data-zakonczenia" class="form-control">
+                        </div>
+
+                        <!-- RODZAJ TRANSPORTU -->
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-muted d-block">Rodzaj transportu:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="rodzaj-transportu"
+                                    id="transport-samolot" value="samolot" checked>
+                                <label class="form-check-label" for="transport-samolot">Samolot</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="rodzaj-transportu"
+                                    id="transport-autokar" value="autokar">
+                                <label class="form-check-label" for="transport-autokar">Autokar</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="rodzaj-transportu"
+                                    id="transport-pociag" value="pociag">
+                                <label class="form-check-label" for="transport-pociag">Pociąg</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="rodzaj-transportu"
+                                    id="transport-samochod" value="samochod">
+                                <label class="form-check-label" for="transport-samochod">Samochód</label>
+                            </div>
+                        </div>
+
+                        <!-- UBEZPIECZENIE, PRZEWODNIK -->
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-muted d-block">Usługi dodatkowe:</label>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="ubezpieczenie" name="dodatki"
+                                    value="ubezpieczenie">
+                                <label class="form-check-label" for="ubezpieczenie">Ubezpieczenie</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="przewodnik" name="dodatki"
+                                    value="przewodnik">
+                                <label class="form-check-label" for="przewodnik">Przewodnik</label>
+                            </div>
+                        </div>
+
+                        <!-- UWAGI -->
+                        <div class="mb-4">
+                            <label for="uwagi" class="form-label fw-bold text-muted">Uwagi:</label>
+                            <textarea id="uwagi" name="uwagi" class="form-control" rows="4"
+                                placeholder="Wpisz swoje uwagi, np. wymagania dietetyczne..."></textarea>
+                        </div>
+
+                        <!-- Przycisk wysyłający na samym dole formularza -->
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg px-5 text-uppercase"
+                                id="zapisz-wyprawe">Zapisz
+                                wyprawę</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer-->
+    <footer class="footer py-4 border-top">
+        <div class="container text-center text-secondary small">
+            &copy; Jan Głowacki 2026 - Planer podróży
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
